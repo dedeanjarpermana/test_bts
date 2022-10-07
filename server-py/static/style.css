@@ -1,0 +1,38 @@
+.container-home img{
+    width: 80%;
+    height: 50%;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-right: 10%;
+
+}
+
+.container-home h3{
+    margin-left: 10%;
+    margin-right: 10%;
+    color:brown;
+}
+.container-home  a h3:hover{
+    
+    color:rgb(8, 49, 187);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+
+.form-search{
+    padding-top: 10px;
+    width: 100%;
+    background-color: rgb(239, 245, 233);
+    border: 2px solid rgb(216, 216, 224);
+    font-size: 20px;
+
+}
+
+
+.login {
+    margin-left: 30%;
+    padding-top: 10%;
+
+}

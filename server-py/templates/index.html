@@ -1,0 +1,38 @@
+
+
+<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'style.css')}}" rel="stylesheet">
+
+{% block body %}
+<div class="container-home">
+    
+    <img src="{{url_for('static',filename='images/background.png')}}">
+</div>
+
+{% endblock %}
+<body>
+    <div class="login">
+        <h1>Silahkan untuk login terlebih dahulu</h1>
+        <div class="links">
+            <a href="{{ url_for('login') }}" class="active">Login</a>
+            
+        </div>
+        <form action="{{ url_for('login') }}" method="post">
+            <label for="id user">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="id_user" placeholder="id user" id="id_user" required>
+            <label for="password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <div class="msg">{{ msg }}</div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+
+<script type="text/javascript" src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
